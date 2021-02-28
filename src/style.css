@@ -1,11 +1,11 @@
 .card {
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  border: 2px;
+  border: 2px solid;
   border-radius: 10px;
 }
 
 .form-control {
-  width: 25%;
+  width: 40%;
 }
 
 .current-location {
