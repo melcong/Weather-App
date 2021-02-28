@@ -4,9 +4,13 @@
   border-radius: 10px;
 }
 
+.form-control {
+  width: 25%;
+}
+
 .current-location {
-  width: 20%;
-  background-color: #777777;
+  width: 5%;
+  background-color: #34a1eb;
   border-radius: 10px;
 }
 
