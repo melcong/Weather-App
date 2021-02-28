@@ -1,0 +1,129 @@
+body {
+  background-image: url("../media/background-shadowcut.jpg");
+  background-size: cover;
+}
+
+h1 {
+  color: #4f514a;
+  font-size: 48px;
+  font-weight: 100;
+  font-family: "Lobster";
+  margin-bottom: 10;
+}
+
+li {
+  list-style: none;
+  font-size: 14px;
+  margin: 0px;
+  color: #7c7c7c;
+  font-family: "Montserrat";
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+ul {
+  margin: 10px;
+  padding: 0;
+}
+
+small {
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: #4e514a;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.wraper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.author {
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.icon {
+  height: 60%;
+  width: 60%;
+  position: relative;
+  margin-left: -5px;
+  top: -3px;
+}
+
+#search-form {
+  color: #777777;
+  font-family: "Montserrat";
+  position: relative;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 64px;
+  width: 64px;
+  float: left;
+}
+
+.weather-temperature strong {
+  color: #4f514a;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 64px;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+}
+
+.weather-temperature .active {
+  color: #4f514a;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.forecast-container img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.forecast-container p {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #777777;
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-align: center;
+  height: 5px;
+}
+
+.forecast-temp {
+  text-decoration: none;
+  color: #777777;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+  margin-bottom: 15px;
+}

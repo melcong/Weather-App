@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="=width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title> Weather🌤 App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wraper">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 750px;">
+                        <div style="height: 400px;">
+                            <form id="search-form" class="mb-3">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <input type="search" placeholder="Type a city..." class="form-control"
+                                            id="city-input" autocomplete="off" />
+                                    </div>
+                                    <div class="col-3">
+                                        <input type="submit" value="Search" class="btn btn-warning w-100" />
+                                    </div>
+                                </div>
+                            </form>
+                            <h1 id="city"></h1>
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul>
+                                        <li>Last updated: <span id="date"></span>
+                                        </li>
+                                        <li id="description">
+                                            Clear
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="clearfix weather-temperature">
+                                        <img src="" alt="clear" id="weather-icon" class="float-left">
+                                        <strong id="temperature">
+                                        </strong><span class="units"><a href="#" id="celcius-link" class="active">ºC</a>
+                                            | <a href="#" id="fahrenheit-link">ºF</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+
+                                </div>
+
+                                <div class="col-6">
+                                    <ul>
+                                        <li>
+                                            Humidity: <span id="humidity"></span>%</li>
+                                        <li>
+                                        <li>
+                                            Percipitation: <span id="percipitation"></span>
+                                        </li>
+                                        Wind: <span id="wind"></span>km/h</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row forecast-container" id="forecast"></div>
+                        </div>
+                        <small>
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+            <script src="src/app.js"></script>
+</body>
+
+</html>
