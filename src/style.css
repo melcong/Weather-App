@@ -98,7 +98,6 @@ small {
   margin-top: 20px;
   text-decoration: none;
   color: #777777;
-  font-family: "Montserrat";
   font-size: 12px;
   text-align: center;
   height: 5px;
@@ -107,7 +106,6 @@ small {
 .forecast-temp {
   text-decoration: none;
   color: #777777;
-  font-family: "Montserrat";
   font-size: 12px;
   font-weight: 400;
   text-align: center;
