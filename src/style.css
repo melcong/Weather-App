@@ -1,3 +1,13 @@
+.card {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border: 2px;
+  border-radius: 10px;
+}
+
+.current-location {
+  width: 20%;
+}
+
 h1 {
   color: #4f514a;
   font-size: 48px;
@@ -54,7 +64,6 @@ small {
 
 #search-form {
   color: #777777;
-  position: relative;
 }
 
 .weather-temperature img {
