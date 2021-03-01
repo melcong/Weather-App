@@ -15,12 +15,11 @@
 }
 
 h1 {
-  color: #4f514a;
   font-size: 48px;
   font-weight: 100;
   margin-bottom: 10;
   font-weight: bold;
-  padding: 0;
+  padding: 5px;
 }
 
 li {
