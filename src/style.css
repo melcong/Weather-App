@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
 .card {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border: 2px solid;
