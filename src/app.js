@@ -80,6 +80,15 @@ apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api
 axios.get(apiUrl).then(displayForecast);
 }
 
+
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+let searchButton = document.querySelector("#searchButton");
+searchButton.addEventListener("click", getCurrentLocation);
+
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
