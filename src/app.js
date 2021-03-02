@@ -95,7 +95,7 @@ function displayFahrenheit(event) {
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function displayCelcius(event) {
+function displayCelciusTemperature(event) {
     event.preventDefault();
     celciusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
@@ -112,6 +112,7 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click",displayCelcius);
+celciusLink.addEventListener("click",displayCelciusTemperature);
+
 
 search("Toronto");
