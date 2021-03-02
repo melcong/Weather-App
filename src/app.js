@@ -86,7 +86,7 @@ function handleSubmit(event) {
     search(cityInputElement.value);
 }
 
-function displayFahrenheitTemperature(event) {
+function displayFahrenheit(event) {
     event.preventDefault();
         let temperatureElement = document.querySelector("#temperature");
     celciusLink.classList.remove("active");    
@@ -95,7 +95,7 @@ function displayFahrenheitTemperature(event) {
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function displayCelciusTemperature(event) {
+function displayCelcius(event) {
     event.preventDefault();
     celciusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
@@ -109,10 +109,10 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click",displayCelciusTemperature);
+celciusLink.addEventListener("click",displayCelcius);
 
 
 search("Toronto");

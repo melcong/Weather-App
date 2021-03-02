@@ -5,7 +5,7 @@
 }
 
 .form-control {
-  width: 70%;
+  width: 35%;
 }
 
 .current-location {
@@ -18,7 +18,7 @@
 h1 {
   font-size: 48px;
   margin-bottom: 10;
-  padding-top: 10px;
+  padding-top: 30px;
   padding-left: 18px;
   padding: 5px;
 }
