@@ -3,9 +3,10 @@
   border: 2px solid;
   border-radius: 10px;
   position: relative;
+  margin: 0 auto;
 }
 
-.form-control {
+.form {
   width: 35%;
 }
 
@@ -17,10 +18,11 @@
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 50px;
   margin-bottom: 10;
   padding-top: 30px;
-  padding-left: 500px;
+  padding-left: 100px;
+  padding-block-start: 10px;
   padding: 5px;
   color: #000000;
 }
@@ -30,9 +32,6 @@ li {
   font-size: 16px;
   margin: 0px;
   color: #000000;
-}
-
-li::first-letter {
   text-transform: capitalize;
 }
 
