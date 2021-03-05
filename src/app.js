@@ -1,4 +1,4 @@
-unction formatDate(timestamp){
+function formatDate(timestamp){
 let date = new Date(timestamp);
 
 let hours = date.getHours();
@@ -80,13 +80,27 @@ apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api
 axios.get(apiUrl).then(displayForecast);
 }
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+let searchButton = document.querySelector("#searchButton");
+searchButton.addEventListener("click", getCurrentLocation);
+
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
     search(cityInputElement.value);
 }
 
-function displayFahrenheitTemperature(event) {
+function searchLocation(position) {
+  let apiKey = "e9f0df1070f392cefc3e4f112830f1d3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function displayFahrenheit(event) {
     event.preventDefault();
         let temperatureElement = document.querySelector("#temperature");
     celciusLink.classList.remove("active");    
@@ -95,7 +109,7 @@ function displayFahrenheitTemperature(event) {
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function displayCelciusTemperature(event) {
+function displayCelcius(event) {
     event.preventDefault();
     celciusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
@@ -109,9 +123,9 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click",displayCelciusTemperature);
+celciusLink.addEventListener("click",displayCelcius);
 
 search("Toronto");
