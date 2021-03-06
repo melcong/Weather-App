@@ -86,9 +86,6 @@ function getCurrentLocation(event) {
 let searchButton = document.querySelector("#searchButton");
 searchButton.addEventListener("click", getCurrentLocation);
 
-let getCurrentLocation = document.querySelector("#currentlocation");
-getCurrentLocation.addEventListener("click", getCurrentLocation);
-
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
@@ -96,6 +93,8 @@ function handleSubmit(event) {
 }
 
 function searchLocation(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
   let apiKey = "e9f0df1070f392cefc3e4f112830f1d3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
