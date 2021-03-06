@@ -86,6 +86,9 @@ function getCurrentLocation(event) {
 let searchButton = document.querySelector("#searchButton");
 searchButton.addEventListener("click", getCurrentLocation);
 
+let getCurrentLocation = document.querySelector("#currentlocation");
+getCurrentLocation.addEventListener("click", getCurrentLocation);
+
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
